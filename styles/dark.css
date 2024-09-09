@@ -3,10 +3,25 @@
   здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
 */
+:root.theme-dark {
+  /* Дублируем переменные для тёмной темы */
+}
+
+@media (prefers-color-scheme: dark) {
+}
 
 .page.theme_dark {
   /* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
   */
+  --bacground-img: url(../images/cover-image-dark.png) lightgray 50% / cover no-repeat;
+  --header-color: #DB00FF;
+  --shadow: #FF0070;
+  --text-color: #F1B2CE;
+  --title-text-color: #000028;
+  --accent-color: #FF0070;
+  --hover-color-button: rgba(255, 0, 112, 0.40);
+  --hover-color-link: #F1B2CE;
+  --bg-color: #FF0070;
 }
