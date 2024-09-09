@@ -68,7 +68,7 @@
   content: var(--teme-hidden-rec);
   color: var(--accent-color);
   text-align: center;
-  font-family: var(--main-font);
+  font-family: var(--main-font, Sans-serif);
   font-size: 18px;
   font-style: normal;
   font-weight: var(--text-weight);
@@ -98,7 +98,7 @@
 
 .heading-decorated {
   color: var(--header-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font, Sans-serif);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: var(--accent-weight);
@@ -114,7 +114,7 @@
 }
 
 .heading {
-  font-family: var(--main-font);
+  font-family: var(--main-font, Sans-serif);
   font-size: 18px;
   font-style: normal;
   line-height: 130%;
@@ -134,7 +134,7 @@
 .header__theme-menu-button {
   color: var(--accent-color);
   text-align: center;
-  font-family: var(--main-font);
+  font-family: var(--main-font, Sans-serif);
   font-size: 18px;
   font-style: normal;
   font-weight: var(--text-weight);
@@ -188,7 +188,7 @@
 
 .content__paragraph {
   color: var(--text-color);
-  font-family: var(--main-font);
+  font-family: var(--main-font, Sans-serif);
   font-size: 18px;
   font-style: normal;
   font-weight: var(--text-weight);
@@ -240,7 +240,7 @@
 }
 
 .subtitle {
-  font-family: var(--main-font);
+  font-family: var(--main-font, Sans-serif);
   font-size: 18px;
   font-style: normal;
   line-height: 130%;
