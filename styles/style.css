@@ -5,6 +5,7 @@
   color: var(--text-color);
   font-family: var(--main-font, Sans-serif);
   background: var(--bacground-img);
+  background-color: var(--bacground-color);
   background-attachment: fixed;
 }
 

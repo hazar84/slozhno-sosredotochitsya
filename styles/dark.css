@@ -16,6 +16,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bacground-img: url(../images/cover-image-dark.png) lightgray 50% / cover no-repeat;
+  --bacground-color: #000028;
   --header-color: #DB00FF;
   --shadow: #FF0070;
   --text-color: #F1B2CE;

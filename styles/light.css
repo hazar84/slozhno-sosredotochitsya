@@ -13,6 +13,7 @@
     чем стили в медиазапросе предпочтений пользователя
   */
   --bacground-img: url(../images/cover-image-light.png) lightgray 50% / cover no-repeat;
+  --bacground-color: #FFF1F7;
   --header-color: #FFC2E6;
   --hover-color-button: rgba(50, 49, 45, 0.40);
   --accent-color: #353430;
@@ -26,6 +27,7 @@
   :root {
     /* Дублируем переменные светлой темы */    
     --bacground-img: url(../images/cover-image-light.png) lightgray 50% / cover no-repeat;
+    --bacground-color: #FFF1F7;
     --header-color: #FFC2E6;
     --hover-color-button: rgba(50, 49, 45, 0.40);
     --accent-color: #353430;
