@@ -1,21 +1,25 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
+/* * {
+  outline: 1px solid orange;
+} */
+
 .page {
   /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
   color: var(--text-color);
-  font-family: var(--main-font, Sans-serif);
+  font-family: var(--main-font, monospace);
   background: var(--bacground-img);
   background-color: var(--bacground-color);
   background-attachment: fixed;
+  background-position: center;
 }
 
 .header {
-  min-block-size: 768px;
+  min-block-size: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
   padding: var(--main-padding);
-  gap: 10px;
 }
 
 .decorated-zone {
@@ -66,27 +70,30 @@
 }
 
 .header__hidden-block::before {
-  content: var(--teme-hidden-rec);
+  content: var(--theme-hidden-rec);
   color: var(--accent-color);
   text-align: center;
-  font-family: var(--main-font, Sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   font-weight: var(--text-weight);
   line-height: 25px;
   position: absolute;
   right: 28px;
+  text-transform: uppercase;
 }
 
 .header__hidden-block::after {
-  content: var(--teme-hidden);
+  content: var(--theme-hidden);
+  background-color: var(--accent-color);
   fill: var(--accent-color);
-  filter: drop-shadow(0px 0px 4px var(--accent-color));
-  background-image: url(../images/ellipse.svg);
-  inline-size: 25px;
-  block-size: 25px;
-  background-repeat: no-repeat;
-  background-position: center;
+  box-shadow: 0 0 4px 2px var(--accent-color);
+  border-radius: 50%;
+  inline-size: 9px;
+  block-size: 9px;
+  position: absolute;
+  right: 9px;
+  top: 8px;
 }
 
 .header__heading {
@@ -99,32 +106,32 @@
 
 .heading-decorated {
   color: var(--header-color);
-  font-family: var(--main-font, Sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
   font-style: normal;
   font-weight: var(--accent-weight);
   line-height: 82.5%;
 }
 
-.header__title {
-  display: grid;
+.header__title-zone {
+  display: flex;
   grid-column: 1 / 4;
   grid-row: 3 / 4;
-  justify-items: end;
-  align-items: center;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .heading {
-  font-family: var(--main-font, Sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   line-height: 130%;
   font-weight: var(--accent-weight);
 }
 
-.header__title-zone {
+.header__title {
   inline-size: max(50%, 375px - 2*(var(--main-padding)));
-  margin-bottom: 10px;
 }
 
 .title-decor {
@@ -135,7 +142,7 @@
 .header__theme-menu-button {
   color: var(--accent-color);
   text-align: center;
-  font-family: var(--main-font, Sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   font-weight: var(--text-weight);
@@ -189,7 +196,7 @@
 
 .content__paragraph {
   color: var(--text-color);
-  font-family: var(--main-font, Sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   font-weight: var(--text-weight);
@@ -198,17 +205,18 @@
 
 .link {
   text-decoration: none;
-  text-shadow: 2px 2px 0px var(--shadow);
+  text-shadow: 2px 2px 0px var(--shado-color-link);
 }
 
 .link:hover {
   outline: none;
-  text-decoration: underline;
+  text-decoration: none;
   text-underline-offset: 3px;
+  border-bottom: 1px solid var(--hover-color-link);
 }
 
 .link:focus-visible {
-  outline: 1px solid var(--hover-color-link);
+  outline: 1px solid var(--hover-color-button);
 }
 
 .content__what {
@@ -228,7 +236,6 @@
 .content__what-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-flow: column;
   gap: 20px;
   align-items: baseline;
 }
@@ -236,12 +243,26 @@
 .content__how {
   display: grid;
   grid-template-columns: 1fr 2fr;
+  row-gap: 20px;
   column-gap: 10px;
   margin-block-start: 80px;
+  align-items: baseline;
+}
+
+.content__how-header {
+  color: var(--accent-color);
+  font-weight: var(--accent-weight);
+  grid-row: 1 / 3;
+}
+
+.content__how-list {
+  display: grid;
+  gap: 20px;
+  grid-column: 2;
 }
 
 .subtitle {
-  font-family: var(--main-font, Sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: 18px;
   font-style: normal;
   line-height: 130%;
@@ -296,7 +317,7 @@
 
 .footer {
   margin-block-start: 60px;
-  min-block-size: 768px;
+  min-block-size: 100vh;
   display: grid;
   align-content: center;
   justify-content: center;
@@ -308,9 +329,6 @@
 }
 
 @media (width <= 768px) {
-  .header {
-    min-block-size: 1024px;
-  }
 
   .header__theme-menu {
     grid-column: 3 / 4;
@@ -321,7 +339,6 @@
   .header__theme-menu-list {
     flex-direction: column;
     gap: 13px;
-    margin-block-start: 7px;
   }
 
   .content__why {
@@ -336,19 +353,26 @@
   .content__how {
     column-gap: 20px;
   }
+}
 
-  .footer {
-    min-block-size: 1024px;
+@media (width <= 590px) {
+  .content__how {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 50px;
+    align-items: stretch;
+  }
+
+  .content__why {
+    display: flex;
+    flex-direction: column;
+    margin-block-start: 40px;
   }
 }
 
-@media (width <= 375px) {
+@media (width <= 417px) {
   :root {
     --main-padding: 10px;
-  }
-  
-  .header {
-    min-block-size: 668px;
   }
 
   .decorated-zone::before {
@@ -369,12 +393,6 @@
     font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   }
 
-  .content__why {
-    display: flex;
-    flex-direction: column;
-    margin-block-start: 40px;
-  }
-
   .content__header {
     margin-block-end: 20px;
   }
@@ -385,12 +403,6 @@
 
   .content__what-header {
     grid-template-columns: 1fr;
-  }
-
-  .content__how {
-    display: flex;
-    flex-direction: column;
-    margin-block-start: 50px;
   }
 
   .cotent__gallery {
@@ -404,7 +416,6 @@
   }
 
   .footer {
-    min-block-size: 667px;
     margin-block-start: 40px;
   }
 }

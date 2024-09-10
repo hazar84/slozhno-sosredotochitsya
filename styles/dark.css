@@ -25,6 +25,7 @@
   --hover-color-button: rgba(255, 0, 112, 0.40);
   --hover-color-link: #F1B2CE;
   --bg-color: #FF0070;
-  --teme-hidden-rec: 'REC';
-  --teme-hidden: '';
+  --theme-hidden-rec: 'REC';
+  --theme-hidden: '';
+  --shado-color-link: #FF0070;
 }

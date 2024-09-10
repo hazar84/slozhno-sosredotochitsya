@@ -17,6 +17,7 @@
   --header-color: #DB00FF;
   --shadow: #FF0070;
   --bg-color: #FF0070;
-  --teme-hidden-rec: 'REC';
-  --teme-hidden: '';
+  --theme-hidden-rec: 'REC';
+  --theme-hidden: '';
+  --shado-color-link: #FF0070;
 }

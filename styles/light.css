@@ -19,8 +19,10 @@
   --accent-color: #353430;
   --bg-color: #FF8DCB;
   --text-color: #353430;
-  --teme-hidden-rec: none;
-  --teme-hidden: none;
+  --theme-hidden-rec: none;
+  --theme-hidden: none;
+  --hover-color-link: #353430;
+  --shado-color-link: rgba(255, 0, 112, 0.40);
 }
 
 @media (prefers-color-scheme: light) {
@@ -33,14 +35,16 @@
     --accent-color: #353430;
     --bg-color: #FF8DCB;
     --text-color: #353430;
-    --teme-hidden-rec: none;
-    --teme-hidden: none;
+    --theme-hidden-rec: none;
+    --theme-hidden: none;
+    --hover-color-link: #353430;
+    --shado-color-link: rgba(255, 0, 112, 0.40);
   }
 }
 
 @media (width <= 768px) {
   .header__heading,
   .footer-heading {
-    text-shadow: 4px 4px 0px #FF8DCB;
+    text-shadow: 4px 4px 0px var(--bg-color);
   }
 }
