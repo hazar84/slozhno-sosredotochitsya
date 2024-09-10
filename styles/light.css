@@ -22,7 +22,7 @@
   --theme-hidden-rec: none;
   --theme-hidden: none;
   --hover-color-link: #353430;
-  --shado-color-link: rgba(255, 0, 112, 0.40);
+  --shadow-color-link: rgba(255, 0, 112, 0.40);
 }
 
 @media (prefers-color-scheme: light) {
@@ -38,7 +38,7 @@
     --theme-hidden-rec: none;
     --theme-hidden: none;
     --hover-color-link: #353430;
-    --shado-color-link: rgba(255, 0, 112, 0.40);
+    --shadow-color-link: rgba(255, 0, 112, 0.40);
   }
 }
 

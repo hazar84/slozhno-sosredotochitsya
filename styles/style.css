@@ -205,7 +205,7 @@
 
 .link {
   text-decoration: none;
-  text-shadow: 2px 2px 0px var(--shado-color-link);
+  text-shadow: 2px 2px 0px var(--shadow-color-link);
 }
 
 .link:hover {
