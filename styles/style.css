@@ -15,7 +15,7 @@
 }
 
 .header {
-  min-block-size: 100vh;
+  block-size: max(100vh, 668px);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr minmax(min-content, max-content) 1fr;
@@ -216,7 +216,7 @@
 }
 
 .link:focus-visible {
-  outline: 1px solid var(--hover-color-button);
+  outline: 1px solid var(--hover-color-link);
 }
 
 .content__what {
@@ -317,7 +317,7 @@
 
 .footer {
   margin-block-start: 60px;
-  min-block-size: 100vh;
+  block-size: max(100vh, 668px);
   display: grid;
   align-content: center;
   justify-content: center;
@@ -341,17 +341,14 @@
     gap: 13px;
   }
 
-  .content__why {
+  .content__why,
+  .content__how {
     column-gap: 20px;
   }
 
   .content__what-list {
     display: flex;
     flex-direction: column;
-  }
-
-  .content__how {
-    column-gap: 20px;
   }
 }
 
