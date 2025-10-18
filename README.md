@@ -71,12 +71,12 @@ slozhno-sosredotochitsya/
 
 1. Клонирование репозитория
 ```bash
-git clone <url-репозитория>
+git clone https://github.com/hazar84/slozhno-sosredotochitsya.git
 ```
 
 2. Переход в папку проекта
 ```bash
-cd no-focus
+cd slozhno-sosredotochitsya
 ```
 
 3. Запуск через Live Server
@@ -132,7 +132,7 @@ cd no-focus
 - Плавные переходы для улучшения UX
 
 ## 🌐 Публикация
-- Проект опубликован на GitHub Pages и доступен по ссылке: [Открыть проект](https://hazar84.github.io/slozhno-sosredotochitsya/)
+- Проект опубликован на GitHub Pages и доступен по ссылке: [открыть проект](https://hazar84.github.io/slozhno-sosredotochitsya/)
 
 ## 📈 Результаты и выводы
 
