@@ -69,17 +69,17 @@ slozhno-sosredotochitsya/
 
 ### 💻 Установка и запуск
 
-1. Клонирование репозитория
+**1. Клонирование репозитория**
 ```bash
 git clone https://github.com/hazar84/slozhno-sosredotochitsya.git
 ```
 
-2. Переход в папку проекта
+**2. Переход в папку проекта**
 ```bash
 cd slozhno-sosredotochitsya
 ```
 
-3. Запуск через Live Server
+**3. Запуск через Live Server**
 - Установите расширение Live Server в VS Code
 - Правой кнопкой на index.html → "Open with Live Server"
 
