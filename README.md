@@ -48,24 +48,21 @@
 
 ## 📁 Структура проекта
 ```text
-no-focus/
-├── index.html
-├── styles/
-│ ├── globals.css # Глобальные стили
-│ ├── variables.css # CSS-переменные
-│ ├── style.css # Основные стили
-│ ├── dark.css # Темная тема
-│ ├── light.css # Светлая тема
-│ └── fonts/
-│ └── fonts.css # Подключение шрифтов
+slozhno-sosredotochitsya/
+├── .github/                 # GitHub конфигурации
+├── fonts/
+│ └── fonts.css              # Подключение шрифтов IBM Plex Mono
+├── images/                  # Изображения проекта
 ├── scripts/
-│ └── script.js # Логика переключения тем
-├── images/ # Изображения и иконки
-│ ├── favicon.ico
-│ ├── favicon.svg
-│ ├── mobile-icon.png
-│ └── [остальные изображения]
-└── README.md
+│ └── script.js              # Логика переключения тем
+├── styles/
+│ ├── globals.css            # Глобальные стили и сбросы
+│ ├── variables.css          # CSS-переменные
+│ ├── style.css              # Основные стили компонентов
+│ ├── dark.css               # Стили темной темы
+│ └── light.css              # Стили светлой темы
+├── index.html               # Главная страница
+└── README.md                # Документация проекта
 ```
 
 ## 🚀 Быстрый старт
